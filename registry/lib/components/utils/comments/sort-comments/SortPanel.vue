@@ -9,6 +9,7 @@
       transform: 'scale(' + (minimized ? 1 : panelScale) + ')',
       transformOrigin: 'right bottom',
     }"
+    @keydown.enter.stop
   >
     <button
       v-if="minimized"
